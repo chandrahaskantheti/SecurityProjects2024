@@ -1,0 +1,17 @@
+COURSE 1: CSE030: Data Structures
+Number of Credits: 4
+Days of Lectures: Monday, Wednesday
+Lecture Time: 4:30pm - 5:45pm
+Stat: on average, students get 85% in this course
+
+COURSE 2: CSE165: Introduction to Object Oriented Programming
+Number of Credits: 4
+Days of Lectures: Tuesday, Thursday
+Lecture Time: 9:00am - 10:15am
+Stat: on average, students get 87% in this course
+
+COURSE 3: BIO101: Introduction to Biology
+Number of Credits: 3
+Days of Lectures: Tuesday, Thursday
+Lecture Time: 11:00am - 12:15pm
+Stat: on average, students get 91% in this course
