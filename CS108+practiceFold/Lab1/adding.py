@@ -1,4 +1,13 @@
-values = list(map(int, input("Enter two or more numbers separated by spaces: ").split()))
-sumResult = sum(values)
+userInput = input("Enter two or more numbers: ")
+  
+numbersString = userInput.split()
 
-print("The sum of the values inputted =", sumResult)
+if len(numbersString) < 2: 
+  raise ValueError("There needs to be 2 or more numbers")
+try:
+  numbers = [float(num) for num in numbersString]
+except ValueError:
+  raise ValueError("Only Numbers can be present.")
+  
+sumTotal = sum(numbers)
+print(sumTotal)
