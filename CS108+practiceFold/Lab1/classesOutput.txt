@@ -15,3 +15,4 @@ Number of Credits: 3
 Days of Lectures: Tuesday, Thursday
 Lecture Time: 11:00am - 12:15pm
 Stat: on average, students get 91% in this course
+
