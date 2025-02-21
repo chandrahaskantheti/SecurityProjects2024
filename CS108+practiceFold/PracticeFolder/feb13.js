@@ -1,3 +1,2 @@
-function displayDate() {
-  document.getElementById("demo").innerHTML = Date();
-}
+var msg = 'Hello World';
+console.log(msg);

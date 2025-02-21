@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="calculatorfeature.css">
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="calcdisplay-container">
+        <input type="text" id="calcdisplay" class="calcdisplay" disabled>
+        <button class="clear" onclick="clearDisplay()">C</button>
+      </div>
+
+      <div class="buttons">
+        <!--1st Line of the Calc-->
+        <button class="number" onclick="addDisplayVal('7')">7</button>
+        <button class="number" onclick="addDisplayVal('8')">8</button>
+        <button class="number" onclick="addDisplayVal('9')">9</button>
+        <button class="operator" onclick="addDisplayVal('/')">/</button>
+        <!--2nd Line of the Calc-->
+        <button class="number" onclick="addDisplayVal('4')">4</button>
+        <button class="number" onclick="addDisplayVal('5')">5</button>
+        <button class="number" onclick="addDisplayVal('6')">6</button>
+        <button class="operator" onclick="addDisplayVal('*')">x</button>
+        <!--3rd Line of the Calc-->
+        <button class="number" onclick="addDisplayVal('1')">1</button>
+        <button class="number" onclick="addDisplayVal('2')">2</button>
+        <button class="number" onclick="addDisplayVal('3')">3</button>
+        <button class="operator" onclick="addDisplayVal('-')">-</button>
+        <!--4th Line of the Calc-->
+        <button class="number" onclick="addDisplayVal('0')">0</button>
+        <button class="number" onclick="addDisplayVal('.')">.</button>
+        <button class="equal" onclick="calculateFinal()">=</button>
+        <button class="operator" onclick="addDisplayVal('+')">+</button>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
