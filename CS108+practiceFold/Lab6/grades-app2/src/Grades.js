@@ -1,19 +1,15 @@
 import React, { useState, useEffect } from "react";
 
-const API_url = "https://amhep.pythonanywhere.com/grades";
+const API_url = "http://127.0.0.1:5000/grades";
 
 const Grades = () => {
   const [grades, setGrades] = useState([]);
-
   const [getName, setGetName] = useState("");
   const [get_grade,setGet_grade] = useState(null);
-  
   const [addName, setAddName] = useState("");
   const [addGrade, setAddGrade] = useState("");
-
   const [updateName, setUpdateName] = useState("");
   const [updateStudent, setUpdateStudent] = useState("");
-  
   const [deleteName, setDeleteName] = useState("");
 
   const fetchGrades = async () => {
