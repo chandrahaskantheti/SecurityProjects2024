@@ -1,0 +1,7 @@
+BackEnd/instance/*.db
+.DS_Store
+
+
+# cache files
+__pycache__/
+*.py[cod]

@@ -1,0 +1,330 @@
+body {
+  font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f8fa;
+  color: #333;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+  .login-form,
+  .dashboard-container,
+  .course-table {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    border: 1px solid #333;
+  }
+  .course-table th {
+    background-color: #f0f4f8;
+    font-weight: bold;
+    color: #003366;
+  }
+
+  .course-table tr:hover {
+    background-color: #f9fbfc;
+  }
+
+  button,
+  .course-table button,
+  ul.course-list button {
+    background-color: #0d6efd;
+    color: white;
+  }
+
+  button:hover,
+  .course-table button:hover,
+  ul.course-list button:hover {
+    background-color: #0a58ca;
+  }
+}
+h2, h3 {
+  color: #003366;
+  text-align: center;
+}
+
+.login-form {
+  width: 320px;
+  margin: 100px auto;
+  padding: 30px;
+  border: 1px solid #ccc;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4 20px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.login-form > * {
+  margin-bottom: 16px;
+}
+
+.login-form input {
+  width: 94%;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  display: block;
+  font-size: 14px;
+}
+
+.login-form button {
+  background-color: #004085;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background-color: #002752;
+}
+.course-table {
+  width: 60%;
+  margin: 30px auto;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.course-table th, .course-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: left;
+  color: #2b2b2b;
+}
+
+.course-table th {
+  background-color: #f0f4f8;
+  font-weight: bold;
+  color: #003366;
+}
+
+.course-table tr:hover {
+  background-color: #f9fbfc;
+}
+
+.course-table button {
+  padding: 8px 8px;
+  font-size: 15px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: #28a745;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.course-table button:hover {
+  background-color: #218838;
+}
+
+button {
+  width: 30%;
+  margin: 12px;
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #002752;
+}
+
+.dashboard-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.dashboard-container h3 {
+  margin-top: 30px;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 10px;
+  font-size: 22px;
+  color: #004085;
+}
+
+ul.course-list {
+  list-style: none;
+  padding: 0;
+}
+
+ul.course-list li {
+  padding: 10px 0;
+}
+
+ul.course-list button {
+  background-color: #17a2b8;
+}
+
+ul.course-list button:hover {
+  background-color: #117a8b;
+}
+.signout-button {
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  width: auto;
+}
+
+.user-role {
+  font-size: 16px;
+  font-weight: normal;
+  color: #666;
+}
+
+button.view-students-button {
+  all: unset;
+  cursor: pointer;
+}
+
+.save-button:disabled,
+.save-button:disabled:hover {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.course-table button {
+  padding: 8px 14px;
+  min-width: 70px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: none;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.course-table button:disabled {
+  background-color: #ccc;
+  color: #666;
+}
+
+
+.auth-toggle-text {
+  font-size: 14px;
+  color: #555;
+}
+
+button.text-button {
+  width: auto;
+  margin: 0;
+  padding: 0;
+  background: none;
+  color: #007bff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+button.text-button:hover {
+  background: none;
+  color: #0056b3;
+}
+.course-table .action-button {
+  width: 32px;
+  height: 32px;
+  font-size: 20px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.course-table .action-button.add {
+  background-color: #6ba43a;
+}
+.course-table .action-button.add:hover {
+  background-color: #157347;
+}
+
+.course-table .action-button.remove {
+  background-color: #dc3545;
+}
+.course-table .action-button.remove:hover {
+  background-color: #bb2d3b;
+}
+
+td.enrolled-low {
+  color: #155724;
+  background-color: #d4edda;
+}
+
+td.enrolled-medium {
+  color: #856404;
+  background-color: #fff3cd;
+}
+
+td.enrolled-full {
+  color: #721c24;
+  background-color: #f8d7da;
+}
+
+.course-table th,
+.course-table td {
+  text-align: center;
+}
+
+.col-name {
+  width: 30%;
+}
+
+.col-teacher {
+  width: 15%;
+}
+
+.col-time {
+  width: 30%;
+}
+
+.col-enrolled {
+  width: 10%;
+}
+
+.col-action {
+  width: 10%;
+}
+
+.col-action button {
+  margin: 0 auto;
+}
+.action-button:disabled {
+  background-color: #ccc !important;
+  color: #666;
+  cursor: not-allowed;
+}
+
+.course-table input[type="number"] {
+  padding: 8px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+.error-message {
+  color: #dc3545;
+  font-size: 14px;
+}
+
+.success-message {
+  color: #155724;
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+}
